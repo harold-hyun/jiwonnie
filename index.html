@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloom & Co. — Fresh Floral Arrangements</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Bloom &amp; Co.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#arrangements">Arrangements</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Handcrafted with love</span>
+      <h1>Flowers that<br/><em>speak for you</em></h1>
+      <p>Fresh, seasonal arrangements made to order.<br/>Available for pickup &amp; local delivery.</p>
+      <div class="hero-cta">
+        <a href="#order" class="btn-primary">Order Now</a>
+        <a href="https://instagram.com/yourusername" class="btn-secondary" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="hero-deco">
+      <div class="circle-lg"></div>
+      <div class="circle-sm"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <div class="about-img-placeholder">
+          <!-- Replace this div with: <img src="images/about.jpg" alt="Florist at work" /> -->
+          <span>Your photo here</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="label">About</span>
+        <h2>Every stem,<br/><em>intentional</em></h2>
+        <p>Hi, I'm [Name] — a passionate florist based in [Your City]. I create bespoke arrangements using the freshest seasonal blooms, sourced locally whenever possible.</p>
+        <p>Whether it's a birthday bouquet, wedding centerpiece, or just a little something to brighten someone's day — every arrangement is made with care, just for you.</p>
+        <a href="https://instagram.com/yourusername" class="insta-link" target="_blank">Follow along on Instagram →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARRANGEMENTS -->
+  <section class="arrangements" id="arrangements">
+    <div class="section-header">
+      <span class="label">What's Available</span>
+      <h2>Seasonal Arrangements</h2>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img card-img-1">
+          <!-- Replace with: <img src="images/bouquet.jpg" alt="Classic Bouquet" /> -->
+        </div>
+        <div class="card-body">
+          <h3>Classic Bouquet</h3>
+          <p>A curated mix of seasonal blooms, hand-tied and wrapped.</p>
+          <span class="price">From $45</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img card-img-2">
+          <!-- Replace with: <img src="images/arrangement.jpg" alt="Vase Arrangement" /> -->
+        </div>
+        <div class="card-body">
+          <h3>Vase Arrangement</h3>
+          <p>A full, lush design ready to display — vase included.</p>
+          <span class="price">From $70</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img card-img-3">
+          <!-- Replace with: <img src="images/custom.jpg" alt="Custom Order" /> -->
+        </div>
+        <div class="card-body">
+          <h3>Custom Order</h3>
+          <p>Have a specific vision? I'll bring it to life just for you.</p>
+          <span class="price">Let's chat</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ORDER / CONTACT -->
+  <section class="order" id="order">
+    <div class="order-inner">
+      <div class="order-text">
+        <span class="label">Get in Touch</span>
+        <h2>Ready to order?</h2>
+        <p>Fill out the form and I'll get back to you within 24 hours to confirm your order and details.</p>
+        <p>You can also DM me directly on Instagram — I'm always there!</p>
+        <a href="https://instagram.com/yourusername" class="insta-link" target="_blank">@yourusername →</a>
+      </div>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <!-- If using Netlify, the data-netlify="true" handles form submissions for free -->
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="type">Arrangement Type</label>
+          <select id="type" name="type">
+            <option value="">Select an option...</option>
+            <option value="bouquet">Classic Bouquet</option>
+            <option value="vase">Vase Arrangement</option>
+            <option value="custom">Custom Order</option>
+            <option value="other">Other / Not sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about the occasion, any flower preferences, budget, or delivery date..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Bloom &amp; Co.</div>
+      <p>Handcrafted floral arrangements · [Your City]</p>
+      <a href="https://instagram.com/yourusername" target="_blank" class="footer-insta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @yourusername
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
