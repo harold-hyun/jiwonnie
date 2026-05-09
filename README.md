@@ -1,4 +1,4 @@
-# 🌸 Bloom & Co. — Flower Business Website
+# 🌸 Flower Business Website
 
 A clean, elegant website for a small floral business. Built with plain HTML & CSS — no frameworks, no build step.
 
